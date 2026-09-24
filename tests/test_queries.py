@@ -36,6 +36,11 @@ TEST_CASES = [
         "query": "เครื่องช้า 3 ชั่วโมง",
         "expected_section": "SECTION 8",
     },
+    {
+        "filename": "05_out_of_scope_cryptocurrency.png",
+        "query": "Can I pay for excess baggage fees using Bitcoin or cryptocurrency?",
+        "expected_section": "SECTION 4",
+    },
 ]
 
 

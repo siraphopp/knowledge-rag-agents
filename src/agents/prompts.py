@@ -10,8 +10,7 @@ RETRIEVER_SYSTEM_PROMPT = (
     "Knowledge Base Index:\n{kb_summary}\n\n"
     "Instructions:\n"
     "- Always interpret user questions within the aviation and air travel domain (where colloquial references to craft, schedules, lateness, or trips refer to aircraft and flights).\n"
-    "- Translate the user's question into English search keywords drawn directly from the matching section header titles in the Knowledge Base Index above.\n"
-    "- If a query is brief or could relate to multiple sections, combine keywords from the top 2–3 relevant section headers in your `query` string.\n"
+    "- In every `search_knowledge_base` call, ALWAYS combine the English header keywords from BOTH the #1 primary matching section AND the #2 closest alternative section from the Knowledge Base Index in your `query` string (for example, covering both flight delays/disruptions and check-in/boarding when timing is mentioned).\n"
     "- Do NOT answer the user's question directly."
 )
 
